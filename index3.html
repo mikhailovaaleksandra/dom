@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 3</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <input type="color" id="bgColor">
+    <input type="color" id="fgColor" >
+    <input type="button" value="Применить цвета" id="colors">
+    
+    <div id="colorBox">Вот такой вот цвет получился</div>
+    
+    <script>
+        document.querySelector("#colors").onclick = function() {
+            document.querySelector("#colorBox").style.backgroundColor = document.querySelector("#bgColor").value;
+            document.querySelector("#colorBox").style.color = document.querySelector("#fgColor").value;
+        }
+    </script>
+</body>
+</html>

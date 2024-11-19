@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сумма чисел</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <label for="n1">Первое число:</label>
+    <input type="number1"id="n1">
+    
+    <label for="n2">Второе число:</label>
+    <input type="number2"id="n2">
+    
+    <input type="button" value="Посчитать сумму" id="calculate">
+    
+    <p>Результат: <span id="result">0</span></p> 
+    
+    <script>
+        document.querySelector("#calculate").onclick = function() {
+            document.querySelector("#result").innerHTML = parseFloat(document.querySelector("#n1").value) + parseFloat(document.querySelector("#n2").value); 
+        }
+    </script>
+</body>
+</html>

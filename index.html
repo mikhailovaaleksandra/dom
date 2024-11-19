@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 1</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <img src="img/1.jpg" alt="" class="img1">
+    <input type="text" id="Url">
+    <input type="button" value="Поменять фото" id="change">  
+    <script>
+        document.querySelector("#change").onclick = function() {
+            let i = document.querySelector("#Url");
+            if (i.value) {
+                document.querySelector(".img1").src = i.value; 
+            } else {
+                alert("Введите правильный URL");
+            }
+        }
+    </script>
+</body>
+</html>

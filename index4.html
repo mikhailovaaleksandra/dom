@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pflfybt 4</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <label for="borderWidth">Толщина:</label>
+    <input type="number" id="borderWidth">
+    
+    <label for="borderColor">Цвет:</label>
+    <input type="color" id="borderColor">
+    
+    <input type="button" value="Изменить таблицу" id="change">
+    
+    <table id="tb">
+        <tr>
+            <th>Название продукта</th>
+            <th>Цена</th>
+            <th>Количество</th>
+        </tr>
+        <tr>
+            <td>Апельсин</td>
+            <td>210 руб</td>
+            <td>5 шт</td>
+        </tr>
+        <tr>
+            <td>Банан</td>
+            <td>160 руб</td>
+            <td>4 шт</td>
+        </tr>
+        <tr>
+            <td>Яблоко</td>
+            <td>130 руб</td>
+            <td>10 шт</td>
+        </tr>
+    </table>
+    
+    <script>
+         document.querySelector("#change").onclick = function() {
+            document.querySelector("#tb").style.border = 
+                document.querySelector("#borderWidth").value + "px solid " + 
+                document.querySelector("#borderColor").value; 
+        }
+    </script>
+</body>
+</html>
